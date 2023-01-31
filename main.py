@@ -49,8 +49,8 @@ def is_bitlink(url, token):
 
 
 def create_parser():
-    parser = argparse.ArgumentParser(description='URL')
-    parser.add_argument('url', help='URL')
+    parser = argparse.ArgumentParser(description='Bitly URL shortener')
+    parser.add_argument('url', help='your URL')
     return parser
 
 
