@@ -47,13 +47,14 @@ def is_bitlink(url, token):
     response.raise_for_status()
     return response.ok
 
+
 def create_parser():
     parser = argparse.ArgumentParser(description='URL')
     parser.add_argument('url', help='URL')
     return parser
 
+
 if __name__ == "__main__":
-    #url = input('Введите ссылку: ')
     parser = create_parser()
     args = parser.parse_args()
     url = args.url
